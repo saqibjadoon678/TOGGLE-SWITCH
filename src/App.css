@@ -1,0 +1,73 @@
+/* App.css */
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.outer-container {
+  border: 2px solid #333; /* Outline color */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+  text-align: center; /* Center the text inside the outer container */
+}
+
+.inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Change the color if needed */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* ToggleSwitch.css */
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-switch {
+  width: 70px; /* Increased width */
+  height: 35px; /* Increased height */
+  background-color: red; /* Default OFF color */
+  border-radius: 35px; /* Adjusted for the new size */
+  position: relative;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.toggle-switch.on {
+  background-color: green; /* ON state color */
+}
+
+.toggle-thumb {
+  width: 30px; /* Increased thumb width */
+  height: 30px; /* Increased thumb height */
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 2px; /* Adjusted for the new size */
+  transform: translateY(-50%);
+  transition: left 0.3s;
+}
+
+.toggle-switch.on .toggle-thumb {
+  left: calc(100% - 32px); /* Adjusted for the new size */
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}

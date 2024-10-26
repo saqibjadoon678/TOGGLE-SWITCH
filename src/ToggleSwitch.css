@@ -1,0 +1,93 @@
+/* Global body styling */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Soft neutral background */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Outer container with light pastel gradient */
+  .outer-container {
+    border-radius: 15px;
+    padding: 20px; /* General padding inside container */
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Lighter shadow for a softer look */
+    color: #333333; /* Darker text for contrast */
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .outer-container:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  /* Styling for the heading inside the container */
+  h1 {
+    color: #333333; /* Dark text for readability */
+    font-size: 22px;
+    margin: 0 0 20px; /* Space below heading */
+    word-wrap: break-word; /* Ensures long words break to stay within the container */
+    line-height: 1.4; /* Spacing between lines if the heading wraps */
+  }
+  
+  /* Inner container with a lighter pastel gradient */
+  .inner-container {
+    background: linear-gradient(135deg, #f9f7d9, #fbd786); /* Soft yellow-to-light peach gradient */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333333; /* Dark text for contrast */
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .inner-container:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  /* Toggle switch styles */
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .toggle-switch {
+    width: 70px; /* Increased width */
+    height: 35px; /* Increased height */
+    background-color: red; /* Default OFF color */
+    border-radius: 35px; /* Adjusted for the new size */
+    position: relative;
+    transition: background-color 0.3s; /* Smooth color transition */
+    margin-right: 10px;
+  }
+  
+  .toggle-switch.on {
+    background-color: green; /* ON state color */
+  }
+  
+  .toggle-thumb {
+    width: 30px; /* Increased thumb width */
+    height: 30px; /* Increased thumb height */
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 2px; /* Adjusted for the new size */
+    transform: translateY(-50%);
+    transition: left 0.3s; /* Smooth thumb movement */
+  }
+  
+  .toggle-switch.on .toggle-thumb {
+    left: calc(100% - 32px); /* Adjusted for the new size */
+  }
+  
+  p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
